@@ -8,8 +8,8 @@ import { FaRegCopyright } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="w-screen border-t-[1px] max-w-5xl border-t-white py-3 px-2 sm:px-[10%] ">
-      <div className="flex flex-col justify-center w-full items-center">
+    <footer className="w-screen border-t-[1px] border-t-white py-3 px-2 sm:px-[10%] ">
+      <div className="flex flex-col justify-center max-w-5xl w-full items-center">
         <div className="flex gap-2 justify-between w-full items-center">
           <div>
             <h2 className="text-base sm:text-2xl text-white ">Stay Connected <span className="text-sm italic">with</span> CoCov</h2>
