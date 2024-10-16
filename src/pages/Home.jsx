@@ -1,5 +1,5 @@
 // import Currencyconverter from "../Assets/Currencyconverter"
-import Card from '../components/Card'
+import Card from '../Assets/Card'
 import { GiQuickSlash } from "react-icons/gi";
 import { BsCurrencyExchange } from "react-icons/bs";
 import { MdOutlineFavorite } from "react-icons/md";
