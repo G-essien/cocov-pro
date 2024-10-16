@@ -90,22 +90,22 @@ function Currencyconverter() {
   }
 
   return (
-    <div>
+    <div className="max-w-xl my-10 p-5 bg-white rounded-lg shadow-md ">
     
-      <div>
+      <div className="grid grid-cols-1">
           <AmountInput />
 
           {/* Input field for entering the amount to convert */}
-          <input type="number" onChange={(e) => setAmount(e.target.value)} value={amount}/> <br />
+          <input type="number" onChange={(e) => setAmount(e.target.value)} value={amount} className="w-full p-2 border border-[#B5651D] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-[#F76C6C] mt-1" /> <br />
 
-        <div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 items-end">
           {/* CurrencySelector component for selecting the currency to convert from */}
           <CurrencySelector currencies={currencies} favorites={favorites} title="From currency" currency={fromCurrency} setCurrency={setFromCurrency} handleFavorite={handleFavorite}/>
 
           {/* Button to swap the selected currencies */}
-          <div>
-            <button onClick={swapCurrencies} >
-              <HiArrowsRightLeft />
+          <div className="flex justify-center -mb-5 sm:mb-0">
+            <button onClick={swapCurrencies} className="p-2 bg-gray-200 rounded-full cursor-pointer hover:bg-gray-300">
+              <HiArrowsRightLeft className="text-xl text-[#B5651D]" />
             </button>
           </div>
 
@@ -116,13 +116,13 @@ function Currencyconverter() {
 
       {/* Display the converted amount if available */}
       {convertedAmount && (
-      <div>
+      <div className="mt-4 text-sm font-medium text-right text-[#F7CE68] border p-2 border-[#B5651D]">
          {convertedAmount}
       </div>)}
 
-      <div>
+      <div className="flex justify-center mt-6">
         {/* Button to trigger the conversion, with a loading animation if converting */}
-        <button onClick={convertCurrency} className={`${converting ? "animate-pulse" : ""}`}>Convert</button>
+        <button onClick={convertCurrency} className={`px-5 py-2 text-[#FFFFFF] bg-[#F76C6C] rounded-md hover:bg-[#FF6B6B] focus:outline-none focus:ring-2 focus:ring-[#F7CE68] ${converting ? "animate-pulse" : ""}`}>Convert</button>
       </div>
     </div>
   )
