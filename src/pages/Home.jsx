@@ -10,9 +10,9 @@ function Home() {
   return (
     <main className="w-screen h-full flex items-center flex-col justify-start py-[50px] px-5">      
       <Currencyconverter className="mt-20" />
-      <h2 className="text-xl mt-7 mb-3 text-white text-center font-semibold">What CoCov Currency Converter Offers You</h2>
+      <h2 className="text-xl mt-7 mb-3 sm:text-2xl text-white text-center font-semibold">What CoCov Currency Converter Offers You</h2>
       <div>
-        <div className="grid gap-6 grid-cols-1 sm:grid-cols-3 p-6">
+        <div className="grid gap-6 grid-cols-1 max-w-5xl sm:grid-cols-3 p-6">
           {/* Card 1 */}
           <Card
             icon={<GiQuickSlash />}

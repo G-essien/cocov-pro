@@ -8,11 +8,11 @@ import { FaRegCopyright } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="w-screen border py-3 px-2 ">
+    <footer className="w-screen border-t-[1px] max-w-5xl border-t-white py-3 px-2 sm:px-[10%] ">
       <div className="flex flex-col justify-center w-full items-center">
-        <div className="flex gap-2 justify-center w-full items-center">
+        <div className="flex gap-2 justify-between w-full items-center">
           <div>
-            <h2 className="text-base sm:text-lg text-white ">Stay Connected <span className="text-sm italic">with</span> CoCov</h2>
+            <h2 className="text-base sm:text-2xl text-white ">Stay Connected <span className="text-sm italic">with</span> CoCov</h2>
           </div>
           
           {/* Social Media Icons */}
@@ -20,31 +20,31 @@ function Footer() {
             
             {/* Instagram Icon */}
             <a href="https://www.instagram.com/j_gessien/" target="_blank" rel="noopener noreferrer" className="text-[#333333] hover:text-[#F7CE68] transition duration-200">
-              <FaInstagram className="text-sm md:text-lg"/>
+              <FaInstagram className="text-sm sm:text-2xl"/>
             </a>
             
             {/* Twitter Icon */}
             <a href="https://x.com/Joo_joGE" target="_blank" rel="noopener noreferrer" className="text-[#333333] hover:text-[#F7CE68] transition duration-200">
-              <FaXTwitter className="text-sm md:text-lg"/>
+              <FaXTwitter className="text-sm sm:text-2xl"/>
             </a>
             
             {/* Facebook Icon */}
             <a href="https://web.facebook.com/?_rdc=1&_rdr" target="_blank" rel="noopener noreferrer" className="text-[#333333] hover:text-[#F7CE68] transition duration-200">
-              <FaFacebookSquare className="text-sm md:text-lg"/>
+              <FaFacebookSquare className="text-sm sm:text-2xl"/>
             </a>
             
             {/* LinkedIn Icon */}
             <a href="https://www.linkedin.com/in/godfredessien/" target="_blank" rel="noopener noreferrer" className="text-[#333333] hover:text-[#F7CE68] transition duration-200">
-              <FaLinkedin className="text-sm md:text-lg"/>
+              <FaLinkedin className="text-sm sm:text-2xl"/>
             </a>            
 
           </div >
         </div>
 
         {/* Copyright Section */}
-        <div className="flex gap-2 justify-center items-center py-3">
-          <FaRegCopyright className="text-sm text-white md:text-lg"/>
-          <p className="text-base md:text-lg text-white">2024 CoCov. All rights reserved</p>
+        <div className="flex gap-2 w-full justify-center items-center py-3">
+          <FaRegCopyright className="text-sm sm:text-lg text-white md:text-lg"/>
+          <p className="text-base sm:text-lg text-white">2024 CoCov. All rights reserved</p>
         </div>
       </div>
     </footer>
