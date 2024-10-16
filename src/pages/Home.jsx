@@ -1,4 +1,4 @@
-import Currencyconverter from "../Assets/Currencyconverter"
+// import Currencyconverter from "../Assets/Currencyconverter"
 import Card from '../components/Card'
 import { GiQuickSlash } from "react-icons/gi";
 import { BsCurrencyExchange } from "react-icons/bs";
@@ -7,7 +7,7 @@ import { MdOutlineFavorite } from "react-icons/md";
 function Home() {
   return (
     <main>      
-      <Currencyconverter />
+      {/* <Currencyconverter /> */}
       <h2>What CoCov Currency Converter Offers You</h2>
       <div>
         <div>
