@@ -10,15 +10,15 @@ const CurrencySelector =({currencies, currency, setCurrency, favorites, handleFa
   return (
     <div>
       {/* Label for the currency selector */}
-      <label htmlFor={title} >{title}</label>
+      <label htmlFor={title} className="block text-sm font-medium text-[#3E3E3E]">{title}</label>
     
-      <div>
+      <div className="mt-1 relative">
         {/* Dropdown to select currency */}
-        <select onChange={(e) => setCurrency(e.target.value)} value={currency}>
+        <select onChange={(e) => setCurrency(e.target.value)} value={currency} className="w-full p-2 border border-[#B5651D] rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-white ">
           {/* Loop through favorites and display them as the first options */}
           {favorites.map((currency) => {
             return( 
-              <option value={currency} key={currency}>
+              <option className="bg-[#B5651D]" value={currency} key={currency}>
                 {currency}
               </option>
           )})}
@@ -35,9 +35,9 @@ const CurrencySelector =({currencies, currency, setCurrency, favorites, handleFa
 
           {/* Button to toggle favorite status of the currently selected currency */}
           {/* Click on the star icon to select a currency as favorite */}
-        <button onClick={() => handleFavorite(currency)}> 
+        <button onClick={() => handleFavorite(currency)} className="absolute inset-y-0 right-0 pr-5 flex items-center text-sm leading-5"> 
           {/* Display a filled star if the currency is a favorite, otherwise show an outlined star */}
-          {isFavorite(currency) ? <HiStar /> : <HiOutlineStar />} 
+          {isFavorite(currency) ? <HiStar className="text-[#F76C6C]"  /> : <HiOutlineStar />} 
         </button> 
       </div>
     </div>
