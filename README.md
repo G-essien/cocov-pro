@@ -31,7 +31,7 @@ To run the Cocov-Pro project locally, follow these steps:
 
 bash
 Copy code
-*[git clone] (https://github.com/G-essien/cocov-pro)*
+*[git clone] (https://github.com/G-essien/cocov-pro.git)*
 
 2. Navigate to the project directory:
 
