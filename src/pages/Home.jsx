@@ -1,4 +1,4 @@
-// import Currencyconverter from "../Assets/Currencyconverter"
+import Currencyconverter from "../components/Currencyconverter"
 import Card from '../Assets/Card'
 import { GiQuickSlash } from "react-icons/gi";
 import { BsCurrencyExchange } from "react-icons/bs";
@@ -6,11 +6,11 @@ import { MdOutlineFavorite } from "react-icons/md";
 
 function Home() {
   return (
-    <main>      
-      {/* <Currencyconverter /> */}
-      <h2>What CoCov Currency Converter Offers You</h2>
+    <main className="w-screen h-full flex items-center flex-col justify-start py-[50px] px-5">      
+      <Currencyconverter className="mt-20" />
+      <h2 className="text-xl mt-7 mb-3 text-white text-center font-semibold">What CoCov Currency Converter Offers You</h2>
       <div>
-        <div>
+        <div className="grid gap-6 grid-cols-1 sm:grid-cols-3 p-6">
           {/* Card 1 */}
           <Card
             icon={<GiQuickSlash />}
